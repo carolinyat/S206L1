@@ -21,7 +21,7 @@ Pela linha de comando, rode as specs:
 ```
 Dessa maneira também será obtido o arquivo HTML
 
-![preview](./teste/image/screen.png)
+![preview](./aula_cypress/image/screen.png)
 
 
 
