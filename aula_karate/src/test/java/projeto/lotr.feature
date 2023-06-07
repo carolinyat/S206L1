@@ -45,3 +45,9 @@ Scenario: Verificando informação do capítulo de um livro
     Then status 200
     Then match $.docs[0].chapterName == 'Minas Tirith'
 
+
+Scenario: Testando URL inválida (Caso negativo)
+    Given url url_base
+    And path 'books/'
+    When method get
+    Then status 404
