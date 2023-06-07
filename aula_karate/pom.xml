@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
  
     <groupId>aula.inatel</groupId>
-    <artifactId>aula_karate</artifactId>
-    <version>1.0</version>
+    <artifactId>aula_inatel</artifactId>
+    <version>1</version>
     <packaging>jar</packaging>
  
     <properties>
