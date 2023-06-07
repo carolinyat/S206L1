@@ -1,0 +1,17 @@
+12:19:13.171 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+12:19:13.805 [main]  INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 3
+12:19:15.787 [main]  DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:19:16.500 [main]  ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed, http call failed after 1121 milliseconds for url: https://swapi.dev/api/people/1/
+12:19:16.511 [main]  ERROR com.intuit.karate - aula_karate/src/test/java/karate/star_wars/star_wars.feature:5
+When method get
+http call failed after 1121 milliseconds for url: https://swapi.dev/api/people/1/
+javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+aula_karate/src/test/java/karate/star_wars/star_wars.feature:5
+12:19:17.319 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) aula_karate/src/test/java/karate/star_wars/star_wars.feature
