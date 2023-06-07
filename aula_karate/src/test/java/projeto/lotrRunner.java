@@ -1,4 +1,4 @@
-package projeto_2;
+package projeto;
 
 import com.intuit.karate.junit5.Karate;
 
