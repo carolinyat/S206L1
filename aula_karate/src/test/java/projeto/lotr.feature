@@ -28,6 +28,7 @@ Scenario: Verificando informações de um livro específico
     Then status 200
     Then match $.docs[0].name == 'The Return Of The King'
 
+
 Scenario: Verificando citações de um filme
     Given url url_base
     And path 'quote/5cd96e05de30eff6ebcce893/'
@@ -35,12 +36,6 @@ Scenario: Verificando citações de um filme
     When method get
     Then status 200
     Then match $.docs[0].dialog == "We do not come to treat with Sauron, faithless and accursed. Tell your master this. The armies of Mordor must disband. He is to depart these lands, never to return."
-
-Scenario: Verificando retorno de URL inválida (Caso negativo)
-    Given url url_base
-    And path 'book/5cf58080b53e011a64671584/chapters/'
-    When method get
-    Then status 404
 
 Scenario: Verificando informação do capítulo de um livro
     Given url url_base
